@@ -18,7 +18,7 @@ publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
 publication: "*Review of Environmental Economics and Policy*, Vol. 16, pages 241-261."
-publication_short: "REEP"
+publication_short: ""
 
 abstract: "In recent years, the approach to wild-caught fisheries management has expanded beyond traditional single-fishery management. This article examines potential market failures within the fisheries sector that may arise because of a failure to account for key features of wild-caught fisheries and that can be addressed by an expanded scope. These market failures include multiple species caught together, multiple fisheries targeting the same stock, and other ecological and socioeconomic interconnections within ecosystems. We also examine market failures that may arise when external factors such as climate change and species invasions are not considered in fisheries management policy or if policies do not consider multisector use of seascapes, linkages between water pollution and fisheries, and market failures that cut across fisheries and nonfishery sectors and involve the underprovision of publicly available data and a lack of information sharing along the supply chain. We find that policies that address these market failures typically have distributional effects; that is, there will be winners and losers, even if aggregate efficiency increases. We conclude that research and policy design need to explicitly consider equity-efficiency trade-offs when seeking to address market failures, and we propose policy and research priorities that support the sustainability of wild-caught seafood."
 
