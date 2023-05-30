@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quota management | L. Nøstbakken</title>
+    <link>/tag/quota-management/</link>
+      <atom:link href="/tag/quota-management/index.xml" rel="self" type="application/rss+xml" />
+    <description>Quota management</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jun 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Quota management</title>
+      <link>/tag/quota-management/</link>
+    </image>
+    
+    <item>
+      <title>A corporate-crime perspective on fisheries: liability rules and non-compliance</title>
+      <link>/publication/jensen-nostbakken-ede2016/</link>
+      <pubDate>Wed, 01 Jun 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/jensen-nostbakken-ede2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Quota setting and enforcement choice in a shared fishery</title>
+      <link>/publication/hatcher-nostbakken-ere2015/</link>
+      <pubDate>Sat, 01 Aug 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/hatcher-nostbakken-ere2015/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Itziar Lazkano | L. Nøstbakken</title>
+    <link>/author/itziar-lazkano/</link>
+      <atom:link href="/author/itziar-lazkano/index.xml" rel="self" type="application/rss+xml" />
+    <description>Itziar Lazkano</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 01 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Itziar Lazkano</title>
+      <link>/author/itziar-lazkano/</link>
+    </image>
+    
+    <item>
+      <title>From fossil fuels to renewables: The role of electricity storage</title>
+      <link>/publication/lazkano-nostbakken-pelli-eer2017/</link>
+      <pubDate>Sun, 01 Oct 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/lazkano-nostbakken-pelli-eer2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Quota Enforcement and Capital Investment in Natural Resource Industries</title>
+      <link>/publication/lazkano-nostbakken-mre2016/</link>
+      <pubDate>Fri, 01 Jul 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/lazkano-nostbakken-mre2016/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
