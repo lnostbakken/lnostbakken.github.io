@@ -94,7 +94,25 @@ Sections: Education, Positions, Editorial & Scientific Appointments, Policy Cont
 
 ### Update the home page text
 
-Edit `index.qmd`. The introductory text is plain Markdown below the `---` line in the file header.
+Edit `index.qmd`. The introductory text is plain Markdown below the `---` line in the YAML header.
+
+### Update contact and social links
+
+The contact/social links (email, LinkedIn, BlueSky, Google Scholar, ORCID) are defined in the YAML header of `index.qmd` under `about: links:`:
+
+```yaml
+links:
+  - icon: envelope
+    text: Email
+    href: mailto:ldn@ssb.no
+  - icon: linkedin
+    text: LinkedIn
+    href: https://www.linkedin.com/in/linda-nostbakken/
+```
+
+To add, remove, or change a link, edit that section. Use Bootstrap icon names (e.g. `envelope`, `linkedin`, `mortarboard`, `person-badge`) for the `icon` field. For services with no Bootstrap icon (like BlueSky), omit the `icon` field and put the emoji in the `text` field.
+
+On desktop these appear as icon + text buttons; on mobile they collapse to a compact row of icons only.
 
 ---
 
@@ -164,4 +182,12 @@ image: files/YOUR_PHOTO_FILENAME.jpg
 
 **Local preview not working?** Make sure Quarto and R are installed and run `quarto preview` from the correct folder.
 
-**Author name encoding issues?** Use `N{\o}stbakken` (not `Nøstbakken`) in .bib files.
+**Author name encoding issues?** Use LaTeX encoding for special characters in `.bib` files — not the Unicode character directly. Common examples:
+
+| Character | LaTeX encoding |
+|---|---|
+| ø (Nøstbakken) | `N{\o}stbakken` |
+| é (José) | `Jos\'{e}` or `Jos{\'e}` |
+| í (María) | `Mar\'{\i}a` |
+| ú (Raúl) | `Ra\'{u}l` |
+| š (Škovič) | `{\v s}` |
