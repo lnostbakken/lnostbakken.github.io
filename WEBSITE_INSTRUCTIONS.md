@@ -150,6 +150,11 @@ image: files/YOUR_PHOTO_FILENAME.jpg
 
 **Site not updating after push?** Wait 2–3 minutes and do a hard refresh (Cmd+Shift+R). Check the Actions tab on https://github.com/lnostbakken/lnostbakken.github.io for build status.
 
+**GitHub Actions build failing?** The workflow installs three R packages required for rendering: `bib2df`, `knitr`, and `rmarkdown`. If you add R packages to the site in the future, add them to the install step in `.github/workflows/publish.yml`:
+```yaml
+run: Rscript -e 'install.packages(c("bib2df", "knitr", "rmarkdown", "your_new_package"))'
+```
+
 **Local preview not working?** Make sure Quarto and R are installed and run `quarto preview` from the correct folder.
 
 **Author name encoding issues?** Use `N{\o}stbakken` (not `Nøstbakken`) in .bib files.
