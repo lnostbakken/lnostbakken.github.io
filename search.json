@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Linda Nøstbakken is the Research Director at Statistics Norway and Professor of Economics at the Norwegian School of Economics (NHH), where she previously served as deputy rector and vice rector for academic affairs.\nHer research primarily examines the use and management of natural resources and the environment. She has published in leading economics journals, with recent work examining the management of marine resources, land use policy for protecting endangered species, and the transition from fossil fuels to renewable energy.\nNøstbakken is Associate Editor of Marine Resource Economics and serves on the editorial board of Review of Environmental Economics and Policy. She previously held editorial roles at the Journal of Environmental Economics and Management and Natural Resource Modeling.\nShe has contributed extensively to public policy through participation in a number of governmental expert commissions and advisory panels. Most recently, she chaired Norway’s Aquaculture Commission (NOU 2023: 23) and the Low Wage Commission (NOU 2024: 11). She currently serves on the Ministry of Finance’s Advisory Panel on Fiscal Policy Analysis and the expert commission evaluating nuclear power options for Norway.\nShe is a board member of the Research Council of Norway and serves as President of the European Association of Environmental and Resource Economists (EAERE) for the 2026-2027 term."
+  },
+  {
     "objectID": "cv.html",
     "href": "cv.html",
     "title": "CV",
@@ -56,6 +63,62 @@
     "text": "Research Director, Statistics Norway\nProfessor of Economics, Norwegian School of Economics (NHH)\nI am an economist specializing in environmental and natural resource economics. My research examines the use and management of natural resources and the environment, with a focus on marine resource management, land use policy, and the energy transition.\nI am Associate Editor of Marine Resource Economics and serve on the editorial board of Review of Environmental Economics and Policy. I am President of the European Association of Environmental and Resource Economists (EAERE) for 2026–2027.\n\nContact\n ldn@ssb.no\n LinkedIn\n🦋 BlueSky"
   },
   {
+    "objectID": "WEBSITE_INSTRUCTIONS.html",
+    "href": "WEBSITE_INSTRUCTIONS.html",
+    "title": "Website Update Instructions",
+    "section": "",
+    "text": "Live site: https://lnostbakken.github.io/\n\n\n\nEdit files locally → preview in browser → commit and push → site updates automatically (within a few minutes).\n\n\n\n\nOpen a terminal, navigate to the website folder, and run:\ncd \"/Users/lnostbak/Library/CloudStorage/OneDrive-NorwegianSchoolofEconomics/Linda/Website_Quarto26/lnostbakken-site\"\nquarto preview\nThis opens a live preview in your browser that updates as you save files.\n\n\n\n\nAfter making and checking your changes, run the following in the terminal:\ngit add -A\ngit commit -m \"brief description of what changed\"\ngit push\nGitHub Actions will automatically rebuild and deploy the site. Changes are usually live within 2–3 minutes.\n\n\n\n\n\n\nAll publications and working papers are managed in a single file:\npapers_all.bib\nKeywords control where each entry appears:\n\n\n\n\n\n\n\nKeyword\nWhere it shows\n\n\n\n\ninternational, selected\nResearch page (Selected Publications) + CV\n\n\ninternational\nCV only\n\n\nnorwegian\nCV only\n\n\nworkingpaper\nResearch page (Working Papers)\n\n\n\nTo add a new working paper, add a @techreport or @unpublished entry with keywords = {workingpaper}. Include an abstract field if available.\nTo add a new published paper, add an @article or @incollection entry with keywords = {international}. Add , selected to the keyword if you want it featured on the Research page. Include doi, abstract, and other fields as available.\nExample entry:\n@article{Author_Nostbakken-2026,\n  author  = {Author, Name and N{\\o}stbakken, Linda},\n  title   = {Paper Title},\n  journal = {Journal Name},\n  volume  = {10},\n  number  = {2},\n  pages   = {1--30},\n  year    = {2026},\n  doi     = {10.xxxx/xxxxxx},\n  abstract= {Abstract text here.},\n  keywords= {international, selected}\n}\nTo move a working paper to published: change keywords = {workingpaper} to keywords = {international} (or add selected), and update the entry type and fields accordingly.\n\n\n\n\nEdit cv.qmd directly. The file uses simple Markdown table syntax:\n| 2026 – | **New Position**, Institution |\nSections: Education, Positions, Editorial & Scientific Appointments, Policy Contributions, Board Memberships, Publications (auto-generated from papers_all.bib).\n\n\n\n\nEdit index.qmd. The introductory text is plain Markdown below the --- line in the file header.\n\n\n\n\nEdit about.qmd. Plain Markdown.\n\n\n\n\nReplace the file at:\nfiles/CV.pdf\nKeep the filename the same so all existing links continue to work.\n\n\n\n\n\nlnostbakken-site/\n├── index.qmd          # Home page\n├── about.qmd          # Bio page\n├── research.qmd       # Research page (publications + working papers)\n├── cv.qmd             # CV page\n├── papers_all.bib     # All publications and working papers\n├── styles.css         # Visual styling\n├── _quarto.yml        # Site configuration (navigation, themes)\n├── R/\n│   └── bib_helpers.R  # R functions for rendering publication lists\n└── files/\n    ├── CV.pdf         # Downloadable CV\n    ├── LN_photo18.jpg # Profile photo\n    └── LN_photo24.jpg # Alternative profile photo\n\n\n\n\nReplace or add a new photo in the files/ folder, then update the filename in index.qmd:\nimage: files/YOUR_PHOTO_FILENAME.jpg\n\n\n\n\nSite not updating after push? Wait 2–3 minutes and do a hard refresh (Cmd+Shift+R). Check the Actions tab on https://github.com/lnostbakken/lnostbakken.github.io for build status.\nLocal preview not working? Make sure Quarto and R are installed and run quarto preview from the correct folder.\nAuthor name encoding issues? Use N{\\o}stbakken (not Nøstbakken) in .bib files."
+  },
+  {
+    "objectID": "WEBSITE_INSTRUCTIONS.html#how-updates-work",
+    "href": "WEBSITE_INSTRUCTIONS.html#how-updates-work",
+    "title": "Website Update Instructions",
+    "section": "",
+    "text": "Edit files locally → preview in browser → commit and push → site updates automatically (within a few minutes)."
+  },
+  {
+    "objectID": "WEBSITE_INSTRUCTIONS.html#previewing-locally",
+    "href": "WEBSITE_INSTRUCTIONS.html#previewing-locally",
+    "title": "Website Update Instructions",
+    "section": "",
+    "text": "Open a terminal, navigate to the website folder, and run:\ncd \"/Users/lnostbak/Library/CloudStorage/OneDrive-NorwegianSchoolofEconomics/Linda/Website_Quarto26/lnostbakken-site\"\nquarto preview\nThis opens a live preview in your browser that updates as you save files."
+  },
+  {
+    "objectID": "WEBSITE_INSTRUCTIONS.html#publishing-updates-to-the-live-site",
+    "href": "WEBSITE_INSTRUCTIONS.html#publishing-updates-to-the-live-site",
+    "title": "Website Update Instructions",
+    "section": "",
+    "text": "After making and checking your changes, run the following in the terminal:\ngit add -A\ngit commit -m \"brief description of what changed\"\ngit push\nGitHub Actions will automatically rebuild and deploy the site. Changes are usually live within 2–3 minutes."
+  },
+  {
+    "objectID": "WEBSITE_INSTRUCTIONS.html#common-updates",
+    "href": "WEBSITE_INSTRUCTIONS.html#common-updates",
+    "title": "Website Update Instructions",
+    "section": "",
+    "text": "All publications and working papers are managed in a single file:\npapers_all.bib\nKeywords control where each entry appears:\n\n\n\n\n\n\n\nKeyword\nWhere it shows\n\n\n\n\ninternational, selected\nResearch page (Selected Publications) + CV\n\n\ninternational\nCV only\n\n\nnorwegian\nCV only\n\n\nworkingpaper\nResearch page (Working Papers)\n\n\n\nTo add a new working paper, add a @techreport or @unpublished entry with keywords = {workingpaper}. Include an abstract field if available.\nTo add a new published paper, add an @article or @incollection entry with keywords = {international}. Add , selected to the keyword if you want it featured on the Research page. Include doi, abstract, and other fields as available.\nExample entry:\n@article{Author_Nostbakken-2026,\n  author  = {Author, Name and N{\\o}stbakken, Linda},\n  title   = {Paper Title},\n  journal = {Journal Name},\n  volume  = {10},\n  number  = {2},\n  pages   = {1--30},\n  year    = {2026},\n  doi     = {10.xxxx/xxxxxx},\n  abstract= {Abstract text here.},\n  keywords= {international, selected}\n}\nTo move a working paper to published: change keywords = {workingpaper} to keywords = {international} (or add selected), and update the entry type and fields accordingly.\n\n\n\n\nEdit cv.qmd directly. The file uses simple Markdown table syntax:\n| 2026 – | **New Position**, Institution |\nSections: Education, Positions, Editorial & Scientific Appointments, Policy Contributions, Board Memberships, Publications (auto-generated from papers_all.bib).\n\n\n\n\nEdit index.qmd. The introductory text is plain Markdown below the --- line in the file header.\n\n\n\n\nEdit about.qmd. Plain Markdown.\n\n\n\n\nReplace the file at:\nfiles/CV.pdf\nKeep the filename the same so all existing links continue to work."
+  },
+  {
+    "objectID": "WEBSITE_INSTRUCTIONS.html#file-overview",
+    "href": "WEBSITE_INSTRUCTIONS.html#file-overview",
+    "title": "Website Update Instructions",
+    "section": "",
+    "text": "lnostbakken-site/\n├── index.qmd          # Home page\n├── about.qmd          # Bio page\n├── research.qmd       # Research page (publications + working papers)\n├── cv.qmd             # CV page\n├── papers_all.bib     # All publications and working papers\n├── styles.css         # Visual styling\n├── _quarto.yml        # Site configuration (navigation, themes)\n├── R/\n│   └── bib_helpers.R  # R functions for rendering publication lists\n└── files/\n    ├── CV.pdf         # Downloadable CV\n    ├── LN_photo18.jpg # Profile photo\n    └── LN_photo24.jpg # Alternative profile photo"
+  },
+  {
+    "objectID": "WEBSITE_INSTRUCTIONS.html#changing-the-profile-photo",
+    "href": "WEBSITE_INSTRUCTIONS.html#changing-the-profile-photo",
+    "title": "Website Update Instructions",
+    "section": "",
+    "text": "Replace or add a new photo in the files/ folder, then update the filename in index.qmd:\nimage: files/YOUR_PHOTO_FILENAME.jpg"
+  },
+  {
+    "objectID": "WEBSITE_INSTRUCTIONS.html#troubleshooting",
+    "href": "WEBSITE_INSTRUCTIONS.html#troubleshooting",
+    "title": "Website Update Instructions",
+    "section": "",
+    "text": "Site not updating after push? Wait 2–3 minutes and do a hard refresh (Cmd+Shift+R). Check the Actions tab on https://github.com/lnostbakken/lnostbakken.github.io for build status.\nLocal preview not working? Make sure Quarto and R are installed and run quarto preview from the correct folder.\nAuthor name encoding issues? Use N{\\o}stbakken (not Nøstbakken) in .bib files."
+  },
+  {
     "objectID": "research.html",
     "href": "research.html",
     "title": "Research",
@@ -75,19 +138,5 @@
     "title": "Research",
     "section": "Working Papers",
     "text": "Working Papers\n\n\n\nCompliance, Environmental Regulation, and Quota Markets\n\n\nFlorian Diekert, Yuanhao Li, Linda Nøstbakken and Andries Richter\n\n\nRevise and resubmit at Journal of Environmental Economics and Management (2026)\n\n\n\nAbstract\n\n\nMarket-based instruments are widely promoted for their efficiency in achieving environmental goals, but their effectiveness depends on enforcement and compliance, which are often imperfect. We develop a theoretical model in which agents face both technological standards and quota regulations, with the possibility of non-compliance with both at the risk of fines. Within this model, we investigate how intrinsic motivation to comply with different regulations affects investment behavior in quota markets. We find that a greater willingness to invest in quotas can result from either a strong intrinsic motivation to comply with quota regulations or a weak motivation to comply with technological standards. To test these predictions, we use survey data and incentivized economic experiments with Norwegian fishers. The empirical results confirm the theory predictions: Fishers who find technological violations less acceptable tend to invest less in quotas, while those who disapprove of quota violations tend to buy more quotas. These findings highlight the critical role of compliance attitudes for quota market behavior and offer insights for designing more efficient environmental regulations.\n\n\n\n\n\nHow Are ITQ Prices Discovered?\n\n\nCorbett Grainger and Linda Nøstbakken\n\n\nSNF Working Paper No. 09/25. SNF – Centre for Applied Research at NHH, 2025\n\n\n\nAbstract\n\n\nWe study price formation in newly created catch share markets, focusing on how relative prices received by small and large quota holders evolve as markets mature. Using transaction-level data from New Zealand individual transferable quota fisheries, we document substantial and persistent price discounts for smaller sellers in permanent quota sales. In contrast, price differences in lease markets are smaller and less systematic over time. Event-time analyses show that seller-size-related price gaps remain pronounced in sales markets well beyond program inception, while lease markets exhibit weaker and less stable patterns. These findings highlight the role of contract structure in shaping price dispersion in decentralized resource markets.\n\n\n\n\n\nDistributional Outcomes and Governance in Marine Fisheries: A Review of the Economics Literature\n\n\nCorbett Grainger, Linda Nøstbakken, Mads Wold and Jake Erickson\n\n\nSNF Working Paper No. 10/2025. SNF – Centre for Applied Research at NHH, 2025\n\n\n\nAbstract\n\n\nDistributional consequences are central to fisheries governance, yet they remain underdeveloped in much of the economics literature. While reforms such as rights-based management, quota allocation, and spatial regulation have been widely studied with respect to efficiency and stock recovery, comparatively little attention has been paid to how these policies redistribute income, rents, rights, and risks across heterogeneous resource users. This paper provides a structured review of the economics literature on distributional outcomes in marine capture fisheries, identifying methodological patterns, data limitations, and directions for future research.\n\n\n\n\n\nThe Efficiency Costs of Transfer and Consolidation Constraints: Evidence from a Resource Market\n\n\nLinda Nøstbakken and Mads Wold\n\n\nSNF Working Paper No. 7/2025. SNF – Centre for Applied Research at NHH, 2025\n\n\n\nAbstract\n\n\nProperty rights-based management is widely used to improve efficiency in natural resource sectors such as fisheries. In catch share programs, harvesting rights are allocated to individuals or firms and traded in markets, with prices reflecting both economic fundamentals and regulatory constraints. This paper analyzes how restrictions on transferability and consolidation affect quota values in a large Norwegian catch-share fishery. Using a novel dataset linking vessel and quota transactions, the study estimates a hedonic pricing model that recovers the capitalized value of quota rights and quantifies the efficiency costs associated with consolidation caps and geographic restrictions.\n\n\n\n\n\nFirm Size and Environmental Effort under Spatial Externalities: Evidence from Norwegian Salmon Farming\n\n\nFelix M. Lavoie and Linda Nøstbakken\n\n\nSNF Working Paper No. 11/2025. SNF – Centre for Applied Research at NHH, 2025\n\n\n\nAbstract\n\n\nThis paper examines how local firm size within a biologically connected production area affects environmental effort in the presence of spatial externalities. In Norwegian salmon farming, sea lice disperse between farms via oceanic currents; delousing at one farm therefore benefits neighboring farms. We develop a conceptual framework in which delousing efforts are strategic substitutes, predicting that farms belonging to firms with larger shares of local production will undertake more mitigation, as they internalize a larger portion of the spillover benefits. Using farm-level weekly microdata from 2012–2021, we construct measures of firm biomass share within biologically relevant distances and relate these shares to delousing treatment probability. Consistent with the model’s prediction, the results reveal a positive relationship between local share and mitigation effort. Robustness checks across buffer distances, model specifications, and pre/post policy change subsamples confirm stability. The results highlight how spatial industry structure shapes incentives for environmental management and suggest that aligning production rights with the spatial extent of externalities could achieve environmental goals through private incentives rather than direct regulation."
-  },
-  {
-    "objectID": "working-papers.html",
-    "href": "working-papers.html",
-    "title": "Working papers",
-    "section": "",
-    "text": "Coming soon."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "Linda Nøstbakken is the Research Director at Statistics Norway and Professor of Economics at the Norwegian School of Economics (NHH), where she previously served as deputy rector and vice rector for academic affairs.\nHer research primarily examines the use and management of natural resources and the environment. She has published in leading economics journals, with recent work examining the management of marine resources, land use policy for protecting endangered species, and the transition from fossil fuels to renewable energy.\nNøstbakken is Associate Editor of Marine Resource Economics and serves on the editorial board of Review of Environmental Economics and Policy. She previously held editorial roles at the Journal of Environmental Economics and Management and Natural Resource Modeling.\nShe has contributed extensively to public policy through participation in a number of governmental expert commissions and advisory panels. Most recently, she chaired Norway’s Aquaculture Commission (NOU 2023: 23) and the Low Wage Commission (NOU 2024: 11). She currently serves on the Ministry of Finance’s Advisory Panel on Fiscal Policy Analysis and the expert commission evaluating nuclear power options for Norway.\nShe is a board member of the Research Council of Norway and serves as President of the European Association of Environmental and Resource Economists (EAERE) for the 2026-2027 term."
   }
 ]

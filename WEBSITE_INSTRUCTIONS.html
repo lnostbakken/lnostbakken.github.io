@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Working papers – Linda Nøstbakken</title>
+<title>website_instructions – Linda Nøstbakken</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -42,9 +77,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f93c2b1f3f0577f377aefa4848a86a36.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-0d4a9d19931feb4fee1ddab4b2489000.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-f93c2b1f3f0577f377aefa4848a86a36.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-28ce2f92125236a284ff4f393e5b0d14.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-7b59f535f4be280c95e9d201c1713015.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-28ce2f92125236a284ff4f393e5b0d14.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -286,31 +321,151 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Working papers</h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
 
 
-</header>
+<section id="website-update-instructions" class="level1">
+<h1>Website Update Instructions</h1>
+<p>Live site: https://lnostbakken.github.io/</p>
+<hr>
+<section id="how-updates-work" class="level2">
+<h2 class="anchored" data-anchor-id="how-updates-work">How updates work</h2>
+<p>Edit files locally → preview in browser → commit and push → site updates automatically (within a few minutes).</p>
+<hr>
+</section>
+<section id="previewing-locally" class="level2">
+<h2 class="anchored" data-anchor-id="previewing-locally">Previewing locally</h2>
+<p>Open a terminal, navigate to the website folder, and run:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> <span class="st">"/Users/lnostbak/Library/CloudStorage/OneDrive-NorwegianSchoolofEconomics/Linda/Website_Quarto26/lnostbakken-site"</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> preview</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This opens a live preview in your browser that updates as you save files.</p>
+<hr>
+</section>
+<section id="publishing-updates-to-the-live-site" class="level2">
+<h2 class="anchored" data-anchor-id="publishing-updates-to-the-live-site">Publishing updates to the live site</h2>
+<p>After making and checking your changes, run the following in the terminal:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add <span class="at">-A</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"brief description of what changed"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>GitHub Actions will automatically rebuild and deploy the site. Changes are usually live within 2–3 minutes.</p>
+<hr>
+</section>
+<section id="common-updates" class="level2">
+<h2 class="anchored" data-anchor-id="common-updates">Common updates</h2>
+<section id="add-a-new-publication-or-working-paper" class="level3">
+<h3 class="anchored" data-anchor-id="add-a-new-publication-or-working-paper">Add a new publication or working paper</h3>
+<p>All publications and working papers are managed in a single file:</p>
+<pre><code>papers_all.bib</code></pre>
+<p><strong>Keywords control where each entry appears:</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Keyword</th>
+<th>Where it shows</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>international, selected</code></td>
+<td>Research page (Selected Publications) + CV</td>
+</tr>
+<tr class="even">
+<td><code>international</code></td>
+<td>CV only</td>
+</tr>
+<tr class="odd">
+<td><code>norwegian</code></td>
+<td>CV only</td>
+</tr>
+<tr class="even">
+<td><code>workingpaper</code></td>
+<td>Research page (Working Papers)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>To add a new working paper</strong>, add a <code>@techreport</code> or <code>@unpublished</code> entry with <code>keywords = {workingpaper}</code>. Include an <code>abstract</code> field if available.</p>
+<p><strong>To add a new published paper</strong>, add an <code>@article</code> or <code>@incollection</code> entry with <code>keywords = {international}</code>. Add <code>, selected</code> to the keyword if you want it featured on the Research page. Include <code>doi</code>, <code>abstract</code>, and other fields as available.</p>
+<p><strong>Example entry:</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bibtex code-with-copy"><code class="sourceCode bibtex"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="va">@article</span>{<span class="ot">Author_Nostbakken</span>-<span class="ot">2026</span>,</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">author</span>  = {Author, Name and N{<span class="ch">\o</span>}stbakken, Linda},</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">title</span>   = {Paper Title},</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">journal</span> = {Journal Name},</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">volume</span>  = {10},</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">number</span>  = {2},</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  <span class="dt">pages</span>   = {1--30},</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="dt">year</span>    = {2026},</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  <span class="dt">doi</span>     = {10.xxxx/xxxxxx},</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="dt">abstract</span>= {Abstract text here.},</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  <span class="dt">keywords</span>= {international, selected}</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>To move a working paper to published</strong>: change <code>keywords = {workingpaper}</code> to <code>keywords = {international}</code> (or add <code>selected</code>), and update the entry type and fields accordingly.</p>
+<hr>
+</section>
+<section id="update-cv-content" class="level3">
+<h3 class="anchored" data-anchor-id="update-cv-content">Update CV content</h3>
+<p>Edit <code>cv.qmd</code> directly. The file uses simple Markdown table syntax:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 2026 – <span class="pp">|</span> **New Position**, Institution <span class="pp">|</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Sections: Education, Positions, Editorial &amp; Scientific Appointments, Policy Contributions, Board Memberships, Publications (auto-generated from papers_all.bib).</p>
+<hr>
+</section>
+<section id="update-the-home-page-text" class="level3">
+<h3 class="anchored" data-anchor-id="update-the-home-page-text">Update the home page text</h3>
+<p>Edit <code>index.qmd</code>. The introductory text is plain Markdown below the <code>---</code> line in the file header.</p>
+<hr>
+</section>
+<section id="update-the-bio-page" class="level3">
+<h3 class="anchored" data-anchor-id="update-the-bio-page">Update the Bio page</h3>
+<p>Edit <code>about.qmd</code>. Plain Markdown.</p>
+<hr>
+</section>
+<section id="update-the-pdf-cv" class="level3">
+<h3 class="anchored" data-anchor-id="update-the-pdf-cv">Update the PDF CV</h3>
+<p>Replace the file at:</p>
+<pre><code>files/CV.pdf</code></pre>
+<p>Keep the filename the same so all existing links continue to work.</p>
+<hr>
+</section>
+</section>
+<section id="file-overview" class="level2">
+<h2 class="anchored" data-anchor-id="file-overview">File overview</h2>
+<pre><code>lnostbakken-site/
+├── index.qmd          # Home page
+├── about.qmd          # Bio page
+├── research.qmd       # Research page (publications + working papers)
+├── cv.qmd             # CV page
+├── papers_all.bib     # All publications and working papers
+├── styles.css         # Visual styling
+├── _quarto.yml        # Site configuration (navigation, themes)
+├── R/
+│   └── bib_helpers.R  # R functions for rendering publication lists
+└── files/
+    ├── CV.pdf         # Downloadable CV
+    ├── LN_photo18.jpg # Profile photo
+    └── LN_photo24.jpg # Alternative profile photo</code></pre>
+<hr>
+</section>
+<section id="changing-the-profile-photo" class="level2">
+<h2 class="anchored" data-anchor-id="changing-the-profile-photo">Changing the profile photo</h2>
+<p>Replace or add a new photo in the <code>files/</code> folder, then update the filename in <code>index.qmd</code>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">image</span><span class="kw">:</span><span class="at"> files/YOUR_PHOTO_FILENAME.jpg</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+<section id="troubleshooting" class="level2">
+<h2 class="anchored" data-anchor-id="troubleshooting">Troubleshooting</h2>
+<p><strong>Site not updating after push?</strong> Wait 2–3 minutes and do a hard refresh (Cmd+Shift+R). Check the Actions tab on https://github.com/lnostbakken/lnostbakken.github.io for build status.</p>
+<p><strong>Local preview not working?</strong> Make sure Quarto and R are installed and run <code>quarto preview</code> from the correct folder.</p>
+<p><strong>Author name encoding issues?</strong> Use <code>N{\o}stbakken</code> (not <code>Nøstbakken</code>) in .bib files.</p>
 
 
-<p>Coming soon.</p>
-
-
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -399,7 +554,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/lnostbakken\.github\.io\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
