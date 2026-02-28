@@ -22,7 +22,7 @@ jobs:
           use-public-rspm: true
 
       - name: Install R packages
-        run: Rscript -e 'install.packages("bib2df")'
+        run: Rscript -e 'install.packages(c("bib2df", "knitr", "rmarkdown"))'
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
