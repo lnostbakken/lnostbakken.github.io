@@ -6,12 +6,20 @@ about:
   image-shape: rounded
   image-width: 16em
   links:
-    - text: Research
-      href: research.qmd
-    - text: CV (PDF)
-      href: files/CV.pdf
-    - text: About
-      href: about.qmd
+    - icon: envelope
+      text: Email
+      href: mailto:ldn@ssb.no
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/linda-nostbakken/
+    - text: "🦋 BlueSky"
+      href: https://bsky.app/profile/lnostbakken.bsky.social
+    - icon: mortarboard
+      text: Google Scholar
+      href: https://scholar.google.com/citations?user=XLo-R-cAAAAJ&hl=en&oi=ao
+    - icon: person-badge
+      text: ORCID
+      href: https://orcid.org/0000-0002-4339-5095
 ---
 
 **Research Director**, [Statistics Norway](https://www.ssb.no/en/forskning/ansatte/linda-nostbakken)
@@ -21,13 +29,3 @@ about:
 I am an economist specializing in environmental and natural resource economics. My research examines the use and management of natural resources and the environment, with a focus on marine resource management, land use policy, and the energy transition.
 
 I am Associate Editor of [*Marine Resource Economics*](https://www.journals.uchicago.edu/journals/mre/about) and serve on the editorial board of [*Review of Environmental Economics and Policy*](https://www.journals.uchicago.edu/journals/reep/about). I am President of the [European Association of Environmental and Resource Economists](https://www.eaere.org/) (EAERE) for 2026–2027.
-
----
-
-**Contact**
-
-<i class="bi bi-envelope"></i> [ldn@ssb.no](mailto:ldn@ssb.no)
-
-<i class="bi bi-linkedin"></i> [LinkedIn](https://www.linkedin.com/in/linda-nostbakken/)
-
-🦋 [BlueSky](https://bsky.app/profile/lnostbakken.bsky.social)
