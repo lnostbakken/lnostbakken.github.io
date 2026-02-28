@@ -1,0 +1,44 @@
+---
+title: Research
+toc: true
+toc-depth: 2
+---
+
+```{r setup}
+#| echo: false
+#| message: false
+#| warning: false
+source("R/bib_helpers.R")
+all <- bib2df("papers_all.bib", separate_names = FALSE)
+kw  <- ifelse(is.na(all$KEYWORDS), "", all$KEYWORDS)
+```
+
+*For a complete list of publications, see the [CV](cv.qmd). Also available on <i class="bi bi-mortarboard"></i> [Google Scholar](https://scholar.google.com/citations?user=XLo-R-cAAAAJ&hl=en&oi=ao) and <i class="bi bi-person-badge"></i> [ORCID](https://orcid.org/0000-0002-4339-5095).*
+
+## Selected Publications
+
+```{r selected}
+#| echo: false
+#| results: asis
+
+sel <- all[grepl("selected", kw, ignore.case = TRUE), ]
+sel <- sel[order(as.integer(sel$YEAR), decreasing = TRUE, na.last = TRUE), ]
+
+cat('<div class="papers-section">')
+for (i in seq_len(nrow(sel))) cat(render_paper_full(sel[i, ]))
+cat('</div>')
+```
+
+## Working Papers
+
+```{r wp}
+#| echo: false
+#| results: asis
+
+wp <- all[grepl("workingpaper", kw, ignore.case = TRUE), ]
+wp <- wp[order(as.integer(wp$YEAR), decreasing = TRUE, na.last = TRUE), ]
+
+cat('<div class="papers-section">')
+for (i in seq_len(nrow(wp))) cat(render_paper_full(wp[i, ]))
+cat('</div>')
+```

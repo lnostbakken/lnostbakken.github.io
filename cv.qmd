@@ -1,0 +1,88 @@
+---
+title: CV
+toc: true
+toc-depth: 2
+---
+
+[Download full CV (PDF)](files/CV.pdf){.btn .btn-outline-primary .btn-sm}
+
+## Education
+
+**Ph.D. in Economics (Dr.Oecon.)**, NHH Norwegian School of Economics, Norway
+
+## Positions
+
+| | |
+|:--|:--|
+| 2020 – | **Research Director**, Statistics Norway |
+| 2016 – | **Professor of Economics**, Department of Economics, Norwegian School of Economics (NHH) |
+| 2017 – 2020 | Deputy Rector and Vice Rector for Academic Affairs, NHH |
+| 2013 – 2016 | Associate Professor, Department of Economics, NHH |
+| 2008 – 2013 | Assistant Professor, Alberta School of Business, University of Alberta, Canada |
+| 2005 – 2008 | Researcher, SNF – Centre for Applied Research at NHH |
+
+: {tbl-colwidths="[18,82]"}
+
+## Editorial & Scientific Appointments
+
+*A selection; see [CV](files/CV.pdf) for complete list.*
+
+| | |
+|:--|:--|
+| 2024 – 2029 | Council member and President (2026–2027), *European Association of Environmental and Resource Economists* (EAERE) |
+| 2022 – | Associate Editor, *Marine Resource Economics* |
+| 2021 – | Editorial Board, *Review of Environmental Economics and Policy* |
+| 2019 – | CESifo Fellow |
+| 2020 – 2024 | Executive committee member, *International Institute of Fisheries Economics & Trade* (IIFET) |
+| 2014 – 2019 | Co-editor, *Journal of Environmental Economics and Management* |
+| 2012 – 2016 | Associate Editor, *Natural Resource Modeling* |
+
+: {tbl-colwidths="[18,82]"}
+
+## Policy Contributions
+
+*Participation in expert commissions appointed by the Norwegian government (selected; see [CV](files/CV.pdf) for complete list).*
+
+| | |
+|:--|:--|
+| 2022 – | Member, Ministry of Finance's [Advisory Committee on Fiscal Policy](https://finanspolitikkutvalget.no) |
+| 2024 – | Member, Expert committee to evaluate nuclear power options for Norway |
+| 2023 – 2024 | Chair, Low Wage Commission ([NOU 2024: 11](https://www.regjeringen.no/no/dokumenter/nou-2024-11/id3045067/)) |
+| 2021 – 2023 | Chair, Norway's Aquaculture Commission ([NOU 2023: 23](https://www.regjeringen.no/no/dokumenter/nou-2023-23/id2995224/)) |
+| 2021 – 2022 | Member, Tax Commission ([NOU 2022: 20](https://www.regjeringen.no/no/dokumenter/nou-2022-20/id2951826/)) |
+| 2017 – 2018 | Member, Norway's Climate Risk Commission ([NOU 2018: 17](https://www.regjeringen.no/no/dokumenter/nou-2018-17/id2622043/)) |
+| 2015 – 2016 | Member, Fisheries management commission ([NOU 2016: 26](https://www.regjeringen.no/no/dokumenter/nou-2016-26/id2523539/)) |
+
+: {tbl-colwidths="[18,82]"}
+
+## Board Memberships
+
+*A selection; see [CV](files/CV.pdf) for complete list.*
+
+| | |
+|:--|:--|
+| 2022 – | Board member, [Research Council of Norway](https://www.forskningsradet.no/en/) |
+| 2022 – | Board member, MRE Foundation |
+| 2019 – 2023 | Board member, SNF – Centre for Applied Research at NHH |
+
+: {tbl-colwidths="[18,82]"}
+
+## Publications
+
+```{r pubs}
+#| echo: false
+#| message: false
+#| warning: false
+#| results: asis
+
+source("R/bib_helpers.R")
+
+all  <- bib2df("papers_all.bib", separate_names = FALSE)
+kw   <- ifelse(is.na(all$KEYWORDS), "", all$KEYWORDS)
+pubs <- all[!grepl("workingpaper", kw, ignore.case = TRUE), ]
+pubs <- pubs[order(as.integer(pubs$YEAR), decreasing = TRUE, na.last = TRUE), ]
+
+cat('<div class="papers-other">')
+for (i in seq_len(nrow(pubs))) cat(render_paper_compact(pubs[i, ]))
+cat('</div>')
+```

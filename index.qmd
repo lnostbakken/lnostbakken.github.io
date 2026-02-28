@@ -1,0 +1,33 @@
+---
+title: "Linda Nøstbakken"
+about:
+  template: trestles
+  image: files/LN_photo18.jpg
+  image-shape: rounded
+  image-width: 16em
+  links:
+    - text: Research
+      href: research.qmd
+    - text: CV (PDF)
+      href: files/CV.pdf
+    - text: About
+      href: about.qmd
+---
+
+**Research Director**, [Statistics Norway](https://www.ssb.no/en/forskning/ansatte/linda-nostbakken)
+
+**Professor of Economics**, [Norwegian School of Economics (NHH)](https://www.nhh.no/en/employees/faculty/linda-nostbakken/)
+
+I am an economist specializing in environmental and natural resource economics. My research examines the use and management of natural resources and the environment, with a focus on marine resource management, land use policy, and the energy transition.
+
+I am Associate Editor of [*Marine Resource Economics*](https://www.journals.uchicago.edu/journals/mre/about) and serve on the editorial board of [*Review of Environmental Economics and Policy*](https://www.journals.uchicago.edu/journals/reep/about). I am President of the [European Association of Environmental and Resource Economists](https://www.eaere.org/) (EAERE) for 2026–2027.
+
+---
+
+**Contact**
+
+<i class="bi bi-envelope"></i> [ldn@ssb.no](mailto:ldn@ssb.no)
+
+<i class="bi bi-linkedin"></i> [LinkedIn](https://www.linkedin.com/in/linda-nostbakken/)
+
+🦋 [BlueSky](https://bsky.app/profile/lnostbakken.bsky.social)
