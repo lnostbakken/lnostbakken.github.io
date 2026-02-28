@@ -152,7 +152,7 @@ details.abstract-toggle summary:hover {
 }
 
 /* ---- Home page contact links: icon-only row on mobile ---- */
-@media (max-width: 767px) {
+@media (max-width: 991.98px) {
   .about-links {
     display: flex !important;
     flex-direction: row !important;
