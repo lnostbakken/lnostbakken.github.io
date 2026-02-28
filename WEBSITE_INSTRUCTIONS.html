@@ -460,8 +460,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="troubleshooting" class="level2">
 <h2 class="anchored" data-anchor-id="troubleshooting">Troubleshooting</h2>
 <p><strong>Site not updating after push?</strong> Wait 2–3 minutes and do a hard refresh (Cmd+Shift+R). Check the Actions tab on https://github.com/lnostbakken/lnostbakken.github.io for build status.</p>
-<p><strong>GitHub Actions build failing?</strong> The workflow installs three R packages required for rendering: <code>bib2df</code>, <code>knitr</code>, and <code>rmarkdown</code>. If you add R packages to the site in the future, add them to the install step in <code>.github/workflows/publish.yml</code>:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">run</span><span class="kw">:</span><span class="at"> Rscript -e 'install.packages(c("bib2df", "knitr", "rmarkdown", "your_new_package"))'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>GitHub Actions build failing?</strong> The workflow installs three R packages required for rendering: <code>bib2df</code>, <code>knitr</code>, and <code>rmarkdown</code>. If you add R packages to the site in the future, add them to the <code>packages</code> list in <code>.github/workflows/publish.yml</code>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Install R dependencies</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> r-lib/actions/setup-r-dependencies@v2</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">with</span><span class="kw">:</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="fu">    packages</span><span class="kw">: </span><span class="ch">|</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>      any::knitr</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>      any::rmarkdown</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>      any::bib2df</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>      any::your_new_package</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p><strong>Local preview not working?</strong> Make sure Quarto and R are installed and run <code>quarto preview</code> from the correct folder.</p>
 <p><strong>Author name encoding issues?</strong> Use <code>N{\o}stbakken</code> (not <code>Nøstbakken</code>) in .bib files.</p>
 
