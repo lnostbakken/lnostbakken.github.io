@@ -151,18 +151,21 @@ details.abstract-toggle summary:hover {
   border-bottom: 1px solid var(--border-color);
 }
 
-/* ---- Home page contact links: icon-only on mobile ---- */
+/* ---- Home page contact links: icon-only row on mobile ---- */
 @media (max-width: 767px) {
   .about-links {
-    display: flex;
-    flex-direction: row;
+    display: flex !important;
+    flex-direction: row !important;
     flex-wrap: wrap;
-    gap: 0.4rem;
+    gap: 0.5rem;
     justify-content: center;
   }
 
   .about-link {
-    padding: 0.35rem 0.5rem;
+    display: inline-flex !important;
+    align-items: center;
+    width: auto !important;
+    padding: 0.4rem 0.6rem;
   }
 
   /* Hide link text, keep icons */
