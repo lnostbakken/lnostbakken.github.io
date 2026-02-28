@@ -1,0 +1,152 @@
+/* -------------------------------------------------------
+   Personal academic website — Linda Nøstbakken
+   Custom styles on top of cosmo (light) / slate (dark)
+   Note: Quarto dark mode uses body.quarto-dark, not data-bs-theme
+------------------------------------------------------- */
+
+/* ---- Color tokens: light mode ---- */
+:root,
+body.quarto-light {
+  --text-primary:   #2b2b2b;
+  --text-secondary: #34495e;
+  --text-muted:     #5a6a7a;
+  --border-color:   #e4e4e4;
+  --section-border: #1565c0;
+  --section-heading:#1565c0;
+  --accent:         #1565c0;
+  --accent-hover:   #2962ff;
+  --abstract-border:rgba(21, 101, 192, 0.25);
+}
+
+/* ---- Color tokens: dark mode ---- */
+body.quarto-dark {
+  --text-primary:   #f8f8f2;
+  --text-secondary: rgba(255,255,255,0.87);
+  --text-muted:     rgba(255,255,255,0.60);
+  --border-color:   rgba(255,255,255,0.12);
+  --section-border: #bbdefb;
+  --section-heading:#ffffff;
+  --accent:         #bbdefb;
+  --accent-hover:   #e3f2fd;
+  --abstract-border:rgba(187,222,251,0.25);
+}
+
+/* Force all base text to near-white in dark mode */
+body.quarto-dark,
+body.quarto-dark p,
+body.quarto-dark li,
+body.quarto-dark td,
+body.quarto-dark th {
+  color: #f8f8f2;
+}
+
+/* ---- Section headings ---- */
+h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--section-border);
+  font-size: 1.35rem;
+  color: var(--section-heading);
+}
+
+/* ---- Full paper entries (WP + selected) ---- */
+.papers-section {
+  margin-top: 0.5rem;
+}
+
+.paper-entry {
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.paper-entry:last-child {
+  border-bottom: none;
+}
+
+.paper-title {
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+
+.paper-authors {
+  margin-bottom: 0.2rem;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.paper-venue {
+  margin-bottom: 0.35rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* ---- Abstract toggle ---- */
+details.abstract-toggle {
+  margin-top: 0.5rem;
+}
+
+details.abstract-toggle summary {
+  cursor: pointer;
+  color: var(--accent);
+  font-size: 0.88rem;
+  font-weight: 500;
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  user-select: none;
+}
+
+details.abstract-toggle summary::-webkit-details-marker {
+  display: none;
+}
+
+details.abstract-toggle summary::before {
+  content: "▶";
+  font-size: 0.65em;
+  transition: transform 0.15s ease;
+  display: inline-block;
+}
+
+details[open].abstract-toggle summary::before {
+  transform: rotate(90deg);
+}
+
+details.abstract-toggle summary:hover {
+  color: var(--accent-hover);
+}
+
+.abstract-text {
+  margin-top: 0.75rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.65;
+  padding-left: 1rem;
+  border-left: 3px solid var(--abstract-border);
+}
+
+/* ---- Compact publication list ---- */
+.papers-other {
+  margin-top: 0.5rem;
+}
+
+.paper-compact {
+  margin-bottom: 0.65rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.paper-title-compact {
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+/* ---- Navbar ---- */
+.navbar {
+  border-bottom: 1px solid var(--border-color);
+}
