@@ -19,10 +19,18 @@ clean_latex <- function(text) {
   text <- gsub("\\{\\\\AE\\}",         "\u00c6", text)
   text <- gsub("\\{\\\\aa\\}",         "\u00e5", text)
   text <- gsub("\\{\\\\AA\\}",         "\u00c5", text)
-  text <- gsub("\\{\\\\'e\\}",         "\u00e9", text)
+  text <- gsub("\\{\\\\'e\\}",         "\u00e9", text)  # {\'e}
+  text <- gsub("\\\\'\\{e\\}",         "\u00e9", text)  # \'{e}
   text <- gsub("\\{\\\\`e\\}",         "\u00e8", text)
-  text <- gsub("\\{\\\\'a\\}",         "\u00e1", text)
-  text <- gsub("\\{\\\\'u\\}",         "\u00fa", text)
+  text <- gsub("\\{\\\\'a\\}",         "\u00e1", text)  # {\'a}
+  text <- gsub("\\\\'\\{a\\}",         "\u00e1", text)  # \'{a}
+  text <- gsub("\\{\\\\'o\\}",         "\u00f3", text)  # {\'o}
+  text <- gsub("\\\\'\\{o\\}",         "\u00f3", text)  # \'{o}
+  text <- gsub("\\{\\\\'u\\}",         "\u00fa", text)  # {\'u}
+  text <- gsub("\\\\'\\{u\\}",         "\u00fa", text)  # \'{u}
+  text <- gsub("\\{\\\\'i\\}",         "\u00ed", text)  # {\'i}
+  text <- gsub("\\\\'\\{\\\\i\\}",     "\u00ed", text)  # \'{\i} dotless i
+  text <- gsub("\\\\'\\{i\\}",         "\u00ed", text)  # \'{i}
   text <- gsub("\\{\\\\~n\\}",         "\u00f1", text)
   text <- gsub("\\{\\\\v\\{s\\}\\}",   "\u0161", text)
   text <- gsub("\\\\v\\{s\\}",         "\u0161", text)
