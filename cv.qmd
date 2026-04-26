@@ -45,8 +45,9 @@ toc-depth: 2
 
 | | |
 |:--|:--|
-| 2022 – | Member, Ministry of Finance's [Advisory Committee on Fiscal Policy](https://finanspolitikkutvalget.no) |
-| 2024 – | Member, Expert committee to evaluate nuclear power options for Norway |
+| 2026 – 2027 | Member, Government commission on Norway's economic transition beyond petroleum |
+| 2022 – 2027 | Member, Ministry of Finance's [Advisory Committee on Fiscal Policy](https://finanspolitikkutvalget.no) |
+| 2024 – 2026 | Member, Norway's Nuclear Power Committee ([NOU 2026: 4](https://www.regjeringen.no/no/dokumenter/nou-2026-4/id3155361/)) |
 | 2023 – 2024 | Chair, Low Wage Commission ([NOU 2024: 11](https://www.regjeringen.no/no/dokumenter/nou-2024-11/id3045067/)) |
 | 2021 – 2023 | Chair, Norway's Aquaculture Commission ([NOU 2023: 23](https://www.regjeringen.no/no/dokumenter/nou-2023-23/id2995224/)) |
 | 2021 – 2022 | Member, Tax Commission ([NOU 2022: 20](https://www.regjeringen.no/no/dokumenter/nou-2022-20/id2951826/)) |
